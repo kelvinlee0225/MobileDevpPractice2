@@ -133,4 +133,7 @@
       <Name>MobileDevpPractice2</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logoIcon.png" />
+  </ItemGroup>
 </Project>
