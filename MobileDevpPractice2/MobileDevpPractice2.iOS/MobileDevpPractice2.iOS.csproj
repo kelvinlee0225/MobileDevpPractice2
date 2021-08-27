@@ -136,4 +136,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\logoIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BarsAndHotels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cafes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FastFoods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FeaturedFoods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FineDining.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Nearby.png" />
+  </ItemGroup>
 </Project>
