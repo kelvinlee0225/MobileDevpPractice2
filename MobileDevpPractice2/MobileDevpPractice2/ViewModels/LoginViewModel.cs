@@ -1,8 +1,10 @@
 ﻿using MobileDevpPractice2.Models;
+using MobileDevpPractice2.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace MobileDevpPractice2.ViewModels
 {
