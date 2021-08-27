@@ -11,12 +11,12 @@ using Xamarin.Forms.Xaml;
 namespace MobileDevpPractice2.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainTabbedPage : TabbedPage
+    public partial class DiscoveryPage : ContentPage
     {
-        public MainTabbedPage()
+        public DiscoveryPage()
         {
             InitializeComponent();
-            BindingContext = new MainViewModel();
+            BindingContext = new DiscoveryViewModel();
         }
     }
 }

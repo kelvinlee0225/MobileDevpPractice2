@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDevpPractice2.Views.DiscoveryPage"
+             Title="Discovery"
+             BackgroundColor="LightGray" >
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0" Padding="5" RowDefinitions="*,Auto,50" RowSpacing="10" BackgroundColor="White">
+                <Image Grid.Row="0"  Margin="10" Source="{Binding BarAndHotelsMenuOption.Image}"/>
+                <Label Grid.Row="1"  Text="{Binding BarAndHotelsMenuOption.Title}" TextColor="Black" HorizontalOptions="Center"  FontSize="15" Margin="0" Padding="0"/>
+                <Label Grid.Row="2"  Text="{Binding BarAndHotelsMenuOption.TotalPlaces}" TextColor="Black" HorizontalOptions="Center" Margin="0" Padding="0"/>
+            </Grid>
+
+            <Grid Grid.Row="0" Grid.Column="1" Padding="5" RowDefinitions="*,Auto,50" RowSpacing="10" BackgroundColor="White">
+                <Image Grid.Row="0"  Margin="10" Source="{Binding FineDining.Image}"/>
+                <Label Grid.Row="1"  Text="{Binding FineDining.Title}" TextColor="Black" HorizontalOptions="Center"  FontSize="15" Margin="0" Padding="0"/>
+                <Label Grid.Row="2"  Text="{Binding FineDining.TotalPlaces}" TextColor="Black" HorizontalOptions="Center" Margin="0" Padding="0"/>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="0" Padding="5" RowDefinitions="*,Auto,50" RowSpacing="10" BackgroundColor="White">
+                <Image Grid.Row="0"  Margin="10" Source="{Binding Cafes.Image}"/>
+                <Label Grid.Row="1"  Text="{Binding Cafes.Title}" TextColor="Black" HorizontalOptions="Center"  FontSize="15" Margin="0" Padding="0"/>
+                <Label Grid.Row="2"  Text="{Binding Cafes.TotalPlaces}" TextColor="Black" HorizontalOptions="Center" Margin="0" Padding="0"/>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="1" Padding="5" RowDefinitions="*,Auto,50" RowSpacing="10" BackgroundColor="White">
+                <Image Grid.Row="0"  Margin="10" Source="{Binding Nearby.Image}"/>
+                <Label Grid.Row="1"  Text="{Binding Nearby.Title}" TextColor="Black" HorizontalOptions="Center"  FontSize="15" Margin="0" Padding="0"/>
+                <Label Grid.Row="2"  Text="{Binding Nearby.TotalPlaces}" TextColor="Black" HorizontalOptions="Center" Margin="0" Padding="0"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="0" Padding="5" RowDefinitions="*,Auto,50" RowSpacing="10" BackgroundColor="White">
+                <Image Grid.Row="0"  Margin="10" Source="{Binding FastFoods.Image}"/>
+                <Label Grid.Row="1"  Text="{Binding FastFoods.Title}" TextColor="Black" HorizontalOptions="Center"  FontSize="15" Margin="0" Padding="0"/>
+                <Label Grid.Row="2"  Text="{Binding FastFoods.TotalPlaces}" TextColor="Black" HorizontalOptions="Center" Margin="0" Padding="0"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="1" Padding="5" RowDefinitions="*,Auto,50" RowSpacing="10" BackgroundColor="White">
+                <Image Grid.Row="0"  Margin="10" Source="{Binding FeaturedFoods.Image}"/>
+                <Label Grid.Row="1"  Text="{Binding FeaturedFoods.Title}" TextColor="Black" HorizontalOptions="Center"  FontSize="15" Margin="0" Padding="0"/>
+                <Label Grid.Row="2"  Text="{Binding FeaturedFoods.TotalPlaces}" TextColor="Black" HorizontalOptions="Center" Margin="0" Padding="0"/>
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
