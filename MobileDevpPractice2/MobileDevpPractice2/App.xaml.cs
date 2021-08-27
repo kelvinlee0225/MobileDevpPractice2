@@ -11,7 +11,7 @@ namespace MobileDevpPractice2
         {
             InitializeComponent();
 
-            MainPage = new MainTabbedPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

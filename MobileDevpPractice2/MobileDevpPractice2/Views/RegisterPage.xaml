@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDevpPractice2.Views.RegisterPage"
+             xmlns:viewmodels="clr-namespace:MobileDevpPractice2.ViewModels">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame 
+                CornerRadius="100"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                HeightRequest="100"
+                WidthRequest="100"
+                Padding="0"
+                IsClippedToBounds="True"
+                Margin="0,0,0,50">
+                <Image Source="logoIcon.png"/>
+            </Frame>
+            <Label 
+                Text="Create Account"
+                FontAttributes="Bold"
+                FontSize="24"
+                HorizontalOptions="Center"/>
+            <Entry 
+                x:Name="NameEntry" 
+                WidthRequest="300" 
+                Placeholder="Name"
+                Text="{Binding User.Name}"/>
+            <Entry 
+                x:Name="emailEntry" 
+                WidthRequest="300" 
+                Placeholder="E-mail"
+                Text="{Binding User.Email}"/>
+            <Entry 
+                x:Name="passEntry" 
+                WidthRequest="300" 
+                IsPassword="true" 
+                Placeholder="Password"
+                Text="{Binding User.Password}"/>
+            <Entry 
+                x:Name="confirmPassEntry" 
+                WidthRequest="300" 
+                IsPassword="true" 
+                Placeholder="Confirm Password"
+                Text="{Binding User.ConfirmPass}"/>
+            <Button 
+                x:Name="signUpButton" 
+                Text="Sign Up"
+                Command="{Binding RegisterCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

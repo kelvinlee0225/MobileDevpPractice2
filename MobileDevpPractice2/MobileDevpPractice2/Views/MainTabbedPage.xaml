@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDevpPractice2.Views.MainTabbedPage"
+            xmlns:models="clr-namespace:MobileDevpPractice2.Models"
+            xmlns:views="clr-namespace:MobileDevpPractice2.Views"
+            BarBackgroundColor = "White"
+            BarTextColor="Black"
+            BackgroundColor="LightGray"
+            NavigationPage.HasNavigationBar="False">
+    <!--Pages can be added as references or inline-->
+    <NavigationPage Title="Home">
+        <x:Arguments>
+            <ContentPage>
+                <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Home"/>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Discovery">
+        <x:Arguments>
+            <views:DiscoveryPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage  Title="Bookmark">
+        <x:Arguments>
+            <ContentPage>
+                <Label VerticalOptions="Center" HorizontalOptions="Center" Text="BookMark"/>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage  Title="Top Feedback">
+        <x:Arguments>
+            <ContentPage>
+                <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Top Feedback"/>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage  Title="Profile">
+        <x:Arguments>
+            <ContentPage>
+                <Label VerticalOptions="Center" HorizontalOptions="Center" Text="Profile"/>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

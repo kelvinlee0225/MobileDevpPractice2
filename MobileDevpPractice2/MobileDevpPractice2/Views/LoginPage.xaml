@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileDevpPractice2.Views.LoginPage"
+             xmlns:viewmodels="clr-namespace:MobileDevpPractice2.ViewModels">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame 
+                CornerRadius="100"
+                HorizontalOptions="Center"
+                HeightRequest="100"
+                WidthRequest="100"
+                Padding="0"
+                IsClippedToBounds="True">
+                <Image Source="logoIcon.png"/>
+            </Frame>
+            <Entry 
+                x:Name="emailEntry" 
+                WidthRequest="300" 
+                Placeholder="E-mail"
+                Text="{Binding User.Email}"/>
+            <Entry 
+                x:Name="passEntry" 
+                WidthRequest="300" 
+                IsPassword="true" 
+                Placeholder="Password"
+                Text="{Binding User.Password}"/>
+            <Button 
+                x:Name="loginButton" 
+                Text="Login"
+                Command="{Binding LoginCommand}"/>
+            <Label
+                x:Name="registerLabel"
+                Text ="Register" 
+                TextDecorations="Underline">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding NavigateCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
